@@ -62,6 +62,30 @@ img {
 }
 
 
+.collapsible {
+  background-color: rgb(200,200,200);
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #B1B0B0;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
 
 </style>
 </head>
@@ -87,29 +111,24 @@ img {
 
 <br>
 
+<h4> Click any of the boxes for more info on these projects. </h4>
 
+<div style="float:left; width:48%;">
 
-
- <div style="float:left; width:48%;">
- <div style="float:left; width:48%;">
- <h3><center>Vegetation patterns in semi-arid ecosystems </center></h3>
- <h4><center>in collaboration with <a href = "http://www.macs.hw.ac.uk/~jas/">Jonathan A. Sherratt</a> and <a href = "https://mattiasensi.github.io/">Mattia Sensi</a></center></h4>
-<p style="text-align:justify">Vegetation patterns are a ubiquitous feature of dryland ecosystems, occurring on all continents except Antarctica. Such mosaics of alternating patches of biomass and bare soil develop as a consequence of a self-organisation principle induced by a positive feedback between local vegetation growth and water redistribution towards areas of high biomass. Patterns occur in many different forms but on sloped terrain, patterns occur as regular stripes.</p>
+<button type="button" class="collapsible"> 
+<div style="float:left; width:48%;"> <h3><center>Vegetation patterns in semi-arid ecosystems</center></h3> <p><center>in collaboration with <a href = "http://www.macs.hw.ac.uk/~jas/">Jonathan A. Sherratt</a> and <a href = "https://mattiasensi.github.io/">Mattia Sensi</a></center></p>
+ </div>
+  <div style="float:right; width:48%;">
+  <img src="somalia.jpg" alt="Vegetation_pattern" width="200" height="345"> <br>
+  </div></button>
+  
+<div class="content">
+  <p style="text-align:justify">Vegetation patterns are a ubiquitous feature of dryland ecosystems, occurring on all continents except Antarctica. Such mosaics of alternating patches of biomass and bare soil develop as a consequence of a self-organisation principle induced by a positive feedback between local vegetation growth and water redistribution towards areas of high biomass. Patterns occur in many different forms but on sloped terrain, patterns occur as regular stripes.</p>
 
 <p style="text-align:justify">A detailed understanding of the dynamics of vegetation patterns is of considerable socio-economic importance as they hold valuable information on the health of ecosystems. In particular, changes to a pattern's properties may act as an early warning signal of desertification, a major threat to economies of countries in arid regions. Data acquisition for vegetation patterns is notoriously difficult due to the spatial and temporal scales associated with the ecosystem dynamics. In particular, their recreation in laboratory settings is infeasible. Thus, a powerful tool to overcome these challenges is the use of mathematical models. The theoretical study of dryland ecosystems, in particular continuum approaches utilising PDEs, has thrived over the last two decades. </p>
 
 <p style="text-align:justify">In our research, we use reaction-advection-diffusion systems based on the Klausmeier model to describe vegetation patterns as periodic travelling waves. We determine conditions for pattern onset, pattern existence and pattern stability to investigate the impact of processes such as nonlocal seed dispersal or temporal rainfall variability on vegetation patterns. Moreover, we use the modelling framework to reveal mechanisms that enable species coexistence despite the competition for a sole limiting resource (water).</p>
 
-
-
- </div>
- 
-  <div style="float:right; width:48%;">
-  <img src="somalia.jpg" alt="Vegetation_pattern" width="200" height="345"> <br>
-  <img src="veg_pattern_plot1.jpg" alt="Vegetation_pattern"  width="200" height="345">
-  </div>
-
- <div style="float:left;"> 
 <h4>Publications:</h4>
 
 <p>L. Eigentler, M. Sensi: Delayed loss of stability of periodic travelling waves: insights from the analysis of essential spectra  <i>ArXiv preprint</i>,  DOI: <a href="https://doi.org/10.48550/arXiv.2311.14717"> 10.48550/arXiv.2311.14717 </a> </p>
@@ -132,28 +151,48 @@ DOI: <a href=https://doi.org/10.1007/s11538-019-00606-z>10.1007/s11538-019-00606
 
 <p>L. Eigentler, J.A. Sherratt: Analysis of a model for banded vegetation patterns in
 semi-arid environments with nonlocal dispersal. <i>J. Math. Biol.</i>, 77.3 (2018), 739--763, DOI: <a href=https://doi.org/10.1007/s00285-018-1233-y>10.1007/s00285-018-1233-y</a>, Post-peer-review, pre-copyedit version: <a href=https://arxiv.org/abs/1911.11037> arXiv:1911.11037</a></p> 
-  
+
 </div>
+<p> </p>
+<button type="button" class="collapsible"> 
+<div style="float:left; width:48%;"> <h3><center>Evolution and maintainence of individual variation</center></h3> <p><center>in collaboration with <a href = "https://www.uni-bielefeld.de/fakultaeten/biologie/forschung/arbeitsgruppen/evo_biology/team/reinhold/">Klaus Reinhold</a> and <a href = "https://www.warningsignal.org/">David W. Kikuchi</a></center></p>
+ </div>
+  <div style="float:right; width:48%;">
+  <img src="ind_variation.webp" alt="Photograph showing mussels of the same species with different visual patterns" width="200" height="200"> <br>
+  </div></button>
+  
+<div class="content">
+<p style="text-align:justify">Why is there so much individual variation among a single population of interest? Why has evolution not led to the selection of one "optimal" strategy? Often, mathematical modelling of evolution focusses on determining evolutionary stable strategies or, if individual variation among a population is considered, assumes this to be a fixed model input to describe mutation rate through a proxy. However, empirical data frequently shows that individual variation is common and its extent can change through feedbacks with ecological dynamics. </p>
+
+<p style="text-align:justify">In our research, we develop mathematical models that allow for the evolution of individual variability through eco-evolutionary dynamics. We use an individual based model to show that intraspecific competition for a resource that varies in quality can lead to the maintainance of individual variation in a trait determines competitiveness. Depending on the shape of the resource quality distribution and the ratio between the best and worst available resource, we highlight that there is either a constant mean investment into competition with large individual variability, or cycling mean investment into competition with low individual variability.</p>
+
+<p style="text-align:justify">We also used a trait-diffusion PDE model to analyse eco-evolutionary predator-prey dynamics with a heritable defence trait in the prey population. Our analysis highlights that (i) ecological oscillations induce oscillations of mean investment into prey defence, (ii) there is selection for high individual variability close to the transition between stable and oscillatory dynamics, and (iii) that evolution of prey defence requires both low cost and high efficiency. </p>
+
+<h4>Publications:</h4>
+
+<p>L. Eigentler, K. Reinhold: Maintenance and evolution of individual differences in a prey defence trait examined with a dynamic predator-prey model.  <i>Biorxiv preprint</i>,  DOI: <a href="https://doi.org/10.1101/2023.12.07.570589 "> 10.1101/2023.12.07.570589  </a></p>
+
+<p>K. Reinhold, L. Eigentler, David W. Kikuchi: Evolution of individual variation in a competitive trait: a theoretical analysis.  <i>Biorxiv preprint</i>,  DOI: <a href="https://doi.org/10.1101/2023.12.06.570103"> 10.1101/2023.12.06.570103 </a></p>
 </div>
 
+</div>
 
 <div style="float:right; width:48%;">
- <div style="float:left; width:48%;">
- <h3><center>Competition and cooperation in bacterial biofilms </center></h3>
- <h4><center>in collaboration with <a href="https://www.researchgate.net/profile/Margarita-Kalamara"> Margarita Kalamara</a>, <a href="https://www.researchgate.net/profile/Thibault-Rosazza"> Thibault Rosazza</a>, <a href="https://www.lifesci.dundee.ac.uk/people/graeme-ball">Graeme Ball</a>, <a href="https://www.ph.ed.ac.uk/people/cait-macphee"> Cait E. MacPhee</a>, <a href="https://www.lifesci.dundee.ac.uk/people/nicola-stanley-wall"> Nicola R. Stanley-Wall</a> and <a href="https://www.dundee.ac.uk/people/fordyce-davidson"> Fordyce A. Davidson</a></center></h4>
- 
- <p style="text-align:justify">Bacterial biofilms are dense aggregates of bacterial cells embedded in a self-produced extracellular matrix. Many different species (<i>Bacillus subtilis</i>, <i> Escherichia coli</i>, <i>Pseudomonas aeruginosa</i>, ...) form biofilms and thus biofilms occur in many different biological, industrial and medical environments. From a human perspective, biofilms can have both positive (e.g. use in waste water treatment, essential for correct functioning of the human gastrointestinal tract, ...) and negative (e.g. cause of chronic infections, biofouling, ...) impacts on the environment.  </p>
+
+<button type="button" class="collapsible"> 
+<div style="float:left; width:48%;"> <h3><center>Competition and cooperation in bacterial biofilms </center></h3> <p><center>in collaboration with <a href="https://www.researchgate.net/profile/Margarita-Kalamara"> Margarita Kalamara</a>, <a href="https://www.researchgate.net/profile/Thibault-Rosazza"> Thibault Rosazza</a>, <a href="https://www.lifesci.dundee.ac.uk/people/graeme-ball">Graeme Ball</a>, <a href="https://www.ph.ed.ac.uk/people/cait-macphee"> Cait E. MacPhee</a>, <a href="https://www.lifesci.dundee.ac.uk/people/nicola-stanley-wall"> Nicola R. Stanley-Wall</a> and <a href="https://www.dundee.ac.uk/people/fordyce-davidson"> Fordyce A. Davidson</a></center></p>
+ </div>
+  <div style="float:right; width:48%;">
+  <img src="biofilms.JPG" alt="An image showing different biofilms comprising two strains with different distributions patterns" width="200" height="345"> <br>
+  </div></button>
+  
+<div class="content">
+<p style="text-align:justify">Bacterial biofilms are dense aggregates of bacterial cells embedded in a self-produced extracellular matrix. Many different species (<i>Bacillus subtilis</i>, <i> Escherichia coli</i>, <i>Pseudomonas aeruginosa</i>, ...) form biofilms and thus biofilms occur in many different biological, industrial and medical environments. From a human perspective, biofilms can have both positive (e.g. use in waste water treatment, essential for correct functioning of the human gastrointestinal tract, ...) and negative (e.g. cause of chronic infections, biofouling, ...) impacts on the environment.  </p>
  
  <p style="text-align:justify">The significant impact of biofilms on the environment they grow in makes synthetically created biofilm-forming strains ideally suited for targeted modification of the environment. For example, the soil dwelling bacterium <i>B. subtilis</i> forms biofilms on plant roots and some <i>B. subtilis</i> strains are capable of promoting plant growth and offering protection from plant pathogens, thus rendering those strains as ideal candidates for being used as the basis for biofertilisers and/or biopesticides. Any successful biocontrol agent not only needs to be able to complete the intended task but is also required to be capable of establishing itself within an existing community. </p>
  
  <p style="text-align:justify">In our research, we investigate competitive and cooperative dynamics within biofilms using an interdisciplinary  approach that combines mathematical modelling with experimental assays. In particular, we focus on competition for space using an isogenic strain pair (strains that express different fluorescent proteins but are otherwise identical) and competition through antagonistic actions using <i>B. subtilis</i> strains as model systems. These reveal that the dominant mode of competition fundamentally depends on the cell density used for biofilm inoculation ("founder density"). Moreover, we investigate the role of extracellular proteases, which we show to be a public good, in the biofilm growth dynamics.</p>
- 
- </div>
-  <div style="float:right; width:48%;">
-  <img src="biofilms.JPG" alt="Biofilms"  width="200" height="345">
-  </div>
- 
- <div style="float:left;"> 
+
 <h4>Publications:</h4>
 
 <h4>Review paper:</h4>
@@ -167,8 +206,10 @@ semi-arid environments with nonlocal dispersal. <i>J. Math. Biol.</i>, 77.3 (201
 <p>L. Eigentler, M. Kalamara, G. Ball, C.E. MacPhee, N.R. Stanley-Wall, F.A. Davidson: Founder cell configuration drives competitive outcome within colony biofilms. <i>ISME J.</i>, in press. DOI: <a href = "https://doi.org/10.1038/s41396-022-01198-8"> 10.1038/s41396-022-01198-8</a>. Preprint: <a href = "https://www.biorxiv.org/content/10.1101/2021.07.08.451560v1"> 10.1101/2021.07.08.451560</a>.</p>
 
 </div>
+
 </div>
-</div>
+
+
 
 
 
@@ -187,6 +228,23 @@ document.write("<i>Last updated "+getDate()+' '+months[getMonth()]+' '+getFullYe
 
 
 </footer>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
 </body>
 </html>
