@@ -60,6 +60,34 @@ footer {
     text-align: center;
 }
 
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  width: 24%;
+}
+
+.left {
+  width: 45%;
+  padding: 1%;
+}
+
+
+.middle {
+  width: 31%;
+  padding: 1%;
+}
+
+.right {
+  width: 18%;
+  padding: 1%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 </head>
 <body style="margin-top: 10px; margin-left: 30px; margin-right: 30px; padding:0">
@@ -86,11 +114,9 @@ footer {
 
 
 
-
-
-<div style="float:left; width:48%;">
-
-  <div style="float:auto;width:98%;height:auto;padding:5px;border:4px double #DEBB07;">
+<div class="row">
+  <div class="column left">
+    <div style="float:auto;width:98%;height:auto;padding:5px;border:4px double #DEBB07;">
     <h3><center>Workshop on pattern formation:  </center></h3>
     <p>I'm hosting a workshop "Mathematical Modelling of Pattern Formation in Biological Systems" that takes place on 15 September at the University of Warwick. More infos, including registration and abstract submission <a href="pattern-workshop-25.html">here.</a></p> 
     </div>
@@ -128,18 +154,18 @@ a Centre for Doctoral Training at Heriot-Watt University and The University of E
 
  
  <div style="float:left; width:100%;"><b>Address:</b><br>Mathematics Institute, Zeeman Building<br>University of Warwick<br>Coventry, CV4 7AL</div>
-
 </div>
 
-<div style="float:right; width:50%;">
 
-<div style="width:fit-content;height:250px;overflow:scroll;padding:5px;border:4px double #DEBB07;">
+
+
+  <div class="column middle">
+    <div style="width:fit-content;height:250px;overflow:scroll;padding:5px;border:4px double #DEBB07;">
 <h3><center>Where you can meet me next:</center></h3>
 
 
-<p> <b>02-16 July 2025:</b>  I will be visiting the University of Yaounde 1, Cameroon.</p>
 <p> <b>04-05 September 2025:</b> <a href="https://ukmathbioconference.github.io/"> UK Mathematical Biology Conference</a>, University of Birmingham.</p>
-<p> <b>22-23 September 2025:</b> Mathematical Modeling of Complex Biological Systems, University of Messina.</p>
+<p> <b>22-23 September 2025:</b> <a href="https://sites.google.com/view/workshop-mathematicalmodels-25/home?authuser=0"> Mathematical Modeling of Complex Biological Systems</a>, University of Messina.</p>
 <p> <b>26-30 January 2026:</b> <a href="https://sites.google.com/view/modis2026/home-page">Modelling Diffusive Systems (MoDiS) </a>, Erwin Schrödinger International Institute for Mathematics and Physics, Vienna.</p>
 <p> <b>08-11 September 2026:</b>  Mathematical Approaches to Spatial Biology: Theory & Applications. University of Durham</p>
 
@@ -157,10 +183,33 @@ State) and I have published a <i>break</i> in <i>The Science Breaker</i>: L. Eig
 <p> <b>24/06/2024:</b> New paper with Thibault Rosazza (UC Irvine), Chris Earl, Fordyce A. Davdidson and Nicola R. Stanley-Wall (all Dundee) on the role of extracellular proteases as a public good during <i>Bacillus subtilis</i> biofilm formation: T. Rosazza, C.S. Earl, L. Eigentler, F.A. Davidson, N.R. Stanley-Wall: Reciprocal sharing of two classes of public goods facilitates <i>Bacillus subtilis</i> biofilm formation.  <i>Mol. Microbiol.</i>, in press.  DOI: <a href="http://doi.org/10.1111/mmi.15288"> 10.1111/mmi.15288 </a> </p>
 <p> <b>26/03/2024:</b> New paper with Klaus Reinhold (Bielefeld) and David W. Kikuchi (Oregon State) on the maintainance of individual variability in a competitive trait: K. Reinhold, L. Eigentler, David W. Kikuchi: Evolution of individual variation in a competitive trait: a theoretical analysis.  <i>J. Evol. Biol.</i> voae036 (2024),  DOI: <a href="https://doi.org/10.1093/jeb/voae036"> 10.1093/jeb/voae036 </a></p>
 <p> <b>01/01/2024:</b> I have started a new role as Assistant Professor at the Warwick Mathematics Institute.</p>
+  </div>
+  </div>
+
+
+
+  <div class="column right">
+    <h2>Not only math!</h2>
+    <p>When I'm not doing math, I spend a lot of time cycling. Follow me on Strava!</p>
+    <iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/49308116/latest-rides/bcaad25bd16ed8ebb9b096f6d80d29c7cf7fd1dc'></iframe>
+  </div>
 </div>
 
 
+
+<div style="float:left; width:48%;">
+
+  
 </div>
+
+<div style="float:right; width:50%;">
+
+
+
+
+</div>
+
+
 
 <footer>
 <!--<p><script language="javascript"> 
